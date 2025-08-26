@@ -1,0 +1,71 @@
+<!doctype html><html lang="ko"><meta charset="utf-8">
+<title>4-1-4. 제거신청</title>
+<meta name="robots" content="noindex,follow">
+<meta name="original_url" content="https://www.sweeper.or.kr/etc/manual/414.html">
+<meta name="images" content='["arrow_up.png", "arrow_left.png", "arrow_right.png", "NewItem1982.png", "NewItem500.png", "NewItem501.png", "NewItem502.png", "NewItem503.png", "NewItem1983.png"]'>
+<link rel="stylesheet" href="/style.css">
+<body>
+<article>
+<h1>4-1-4. 제거신청</h1>
+<div class="src">원문: <a href="https://www.sweeper.or.kr/etc/manual/414.html" target="_blank" rel="noopener">https://www.sweeper.or.kr/etc/manual/414.html</a></div>
+<h1 id="4-1-4">4-1-4. 제거신청</h1>
+<p>Source: https://www.sweeper.or.kr/etc/manual/414.html</p>
+<h1 id="4-1-4_1">4-1-4. 제거신청</h1>
+<p><a href="4.html">4. 일반정보</a> ›› <a href="41.html">4-1. 장비관리</a> ››</p>
+<p><a href="41.html"><img alt="" src="/assets/images/arrow_up.png" /></a>
+<a href="413.html"><img alt="" src="/assets/images/arrow_left.png" /></a>
+<a href="415AGENT.html"><img alt="" src="/assets/images/arrow_right.png" /></a></p>
+<p>설치된 에이전트를 제거하기 위해 신청 및 승인을 할 수 있습니다. </p>
+<p><img alt="" src="/assets/images/NewItem1982.png" /></p>
+<p><img alt="" src="/assets/images/NewItem500.png" /></p>
+<p>임의 삭제 남용을 방지하기 위해 요청키와 제거키를 사용하도록 구현되어 있습니다. </p>
+<ul>
+<li>
+<p>요청키 : 에이전트 신청을 통해 생성된 고유키(SHA2) 입니다.</p>
+</li>
+<li>
+<p>에이전트가 오프라인인 경우 요청을 할 수 없으므로 이메일 등을 통해 요청키를 전달합니다.</p>
+</li>
+<li>
+<p>제거키 : 에이전트 삭제를 위해 생성된 고유키(SHA2) 입니다.</p>
+</li>
+<li>
+<p>반드시 요청키가 있어야만 하며 요청키 없이 생선된 제거키는 사용할 수 없습니다.</p>
+</li>
+<li>
+<p>에이전트는 반드시 삭제 화면에서 제거키를 입력해야만 삭제 가능합니다.</p>
+</li>
+</ul>
+<p>참고사항</p>
+<ul>
+<li>
+<p>에이전트 신청/승인 기능은 사용자가 삭제할 수 있는 기반을 마련하기 위한 기능으로 관리자가 직접 삭제하는 경우 명령을 통해 원격 삭제 가능합니다. </p>
+</li>
+<li>
+<p>에이전트에서 제거신청 시 생성되는  '요청키는 고정된 값이 아니며 에이전트를 재시작하면 '요청키'가 변경되므로 제거신청을 다시해야 합니다. </p>
+</li>
+</ul>
+<p>설정방법</p>
+<p>에이전트에서 신청방법은 에이전트 매뉴얼을 참고하시기 바랍니다. </p>
+<ol>
+<li>에이전트에서 요청키로 삭제 신청을 합니다.</li>
+<li>
+<p>신청된 내용을 검색 후 해당 내용에 마우스 우클릭하여 승인 및 거절 메뉴를 클릭합니다. <br />
+<img alt="" src="/assets/images/NewItem501.png" /></p>
+</li>
+<li>
+<p>에이전트 제거 승인 및 거절 화면이 팝업되면 상태(신청, 승인, 거절)를 변경하여 확인 버튼을 클릭합니다.  <br />
+<img alt="" src="/assets/images/NewItem502.png" /></p>
+</li>
+<li>
+<p>승인을 완료하면 제거키가 생성된 것을 확인할 수 있습니다. <br />
+<img alt="" src="/assets/images/NewItem503.png" /></p>
+</li>
+<li>
+<p>생성된 제거키를 신청한 사용자에게 전달합니다.</p>
+</li>
+</ol>
+<p><img alt="" src="/assets/images/NewItem1983.png" /></p>
+<p>© Copyright SWeeper Inc.. All Rights Reserved</p>
+</article>
+</body></html>

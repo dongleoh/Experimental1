@@ -1,0 +1,97 @@
+<!doctype html><html lang="ko"><meta charset="utf-8">
+<title>2-1-2-2. AGENT</title>
+<meta name="robots" content="noindex,follow">
+<meta name="original_url" content="https://www.sweeper.or.kr/etc/manual/2122AGENT.html">
+<meta name="images" content='["arrow_up.png", "arrow_left.png", "arrow_right.png", "NewItem1844.png", "NewItem1845.png", "NewItem1846.png"]'>
+<link rel="stylesheet" href="/style.css">
+<body>
+<article>
+<h1>2-1-2-2. AGENT</h1>
+<div class="src">원문: <a href="https://www.sweeper.or.kr/etc/manual/2122AGENT.html" target="_blank" rel="noopener">https://www.sweeper.or.kr/etc/manual/2122AGENT.html</a></div>
+<h1 id="2-1-2-2-agent">2-1-2-2. AGENT</h1>
+<p>Source: https://www.sweeper.or.kr/etc/manual/2122AGENT.html</p>
+<h1 id="2-1-2-2-agent_1">2-1-2-2. AGENT</h1>
+<p><a href="2.html">2. 홈</a> ›› <a href="21.html">2-1. 환경설정</a> ›› <a href="212.html">2-1-2. 일반설정</a> ››</p>
+<p><a href="212.html"><img alt="" src="/assets/images/arrow_up.png" /></a>
+<a href="2121.html"><img alt="" src="/assets/images/arrow_left.png" /></a>
+<a href="2123.html"><img alt="" src="/assets/images/arrow_right.png" /></a></p>
+<p>사용자 PC에 설치된 에이전트가 기본적인 수행을 위해 필요한 여러가지 설정을 할 수 있습니다. </p>
+<p><img alt="" src="/assets/images/NewItem1844.png" /></p>
+<p>Agent 포트 : 에이전트에서 서버와 통신하기 위한 대기포트를 설정합니다.</p>
+<p>보고 주기/명령 요청 주기(분) : 에이전트가 서버로 보고하는 주기와 또는 에이전트가 수행할 명령을 요청하는 주기를 설정합니다. </p>
+<ul>
+<li>보고 시간은 향후 PC 사용시간을 산정하는 Data로 사용됩니다.</li>
+<li>최대 설정시간 : 60분</li>
+</ul>
+<p>AGENT 버전 : 에이전트 현재 버전을 표시합니다.</p>
+<ul>
+<li>처음 서버를 설치한 경우에는 표시되지 않습니다.</li>
+<li>담당 엔지니어를 통해 에이전트 패치가 있었을 경우에만 표시됩니다.</li>
+</ul>
+<p>AGENT 버전 (MAC) : MAC 에이전트 현재 버전을 표시합니다.</p>
+<ul>
+<li>처음 서버를 설치한 경우에는 표시되지 않습니다.</li>
+<li>담당 엔지니어를 통해 에이전트 패치가 있었을 경우에만 표시됩니다.</li>
+</ul>
+<p>초기 부서 : 에이전트 설치 후 기본 설정될 부서를 설정합니다. </p>
+<p>장기미사용장비전환기준(일) : 장기 미사용장비로 전환되는 기준일을 설정합니다.</p>
+<ul>
+<li>보고시간을 기준으로 하며 최근 보고일자 기준으로 설정된 전환 기준일만큼 보고가 없을 경우 장기미사용 상태로 변경됩니다.</li>
+<li>최대 설정시간 : 180분</li>
+</ul>
+<p>설치유도 여부 : 설치유도 여부를 설정합니다. </p>
+<p>수신메시지 삭제 (일) : 설정한 일수가 지난 메시지를 삭제합니다. </p>
+<ul>
+<li>
+<p>0 (기본) : 메시지를 삭제하지 않습니다.</p>
+</li>
+<li>
+<p>0으로 설정시 사용자 화면에서  삭제일 항목이 활성화 되어, 사용자 지정 가능합니다. (<a href="11-3-2-3.html">12-3-2-3. 환경설정</a> 참고)</p>
+</li>
+<li>
+<p>n일 : 현재일 기준 n+1 일 이전 메시지를 삭제합니다.</p>
+</li>
+<li>
+<p>사용자 화면에서는 수신메시지 삭제일 항목이 비활성화 됩니다. (관리자 설정에 따라 동작)</p>
+</li>
+<li>
+<p>최대 설정시간 : 180일</p>
+</li>
+</ul>
+<p><img alt="" src="/assets/images/NewItem1845.png" /></p>
+<p>네트워크검색설정</p>
+<ul>
+<li>[일반정보 - Agent - 네트워크검색 설정]에서 Agent는 네트워크 정보를 검색하여 서버에 보고하는데, 이에 대한 설정입니다.</li>
+<li>
+<p>검색 프로토콜 : 검색에 포함할 프로토콜을 선택합니다.</p>
+</li>
+<li>
+<p>SNMP : SNMP 설정이 되어 있는 Network, 프린터 장비검색을 위해 사용됩니다. (SNMP 인증인 public으로 합니다.)</p>
+</li>
+<li>
+<p>NetBIOS : 장비의 컴퓨터명, 워크그룹을 검색하기 위해 사용합니다.</p>
+</li>
+<li>
+<p>검색 쓰레드개수 : 검색에 사용할 쓰레드 개수를 설정합니다.</p>
+</li>
+<li>
+<p>쓰레드 개수가 많을 수록 검색 장비 PC의 성능저하가 발생할 수 있으므로 5 이상 설정하지 않을 것을 권장합니다.</p>
+</li>
+<li>
+<p>검색 주기 (분) : 네트워크 검색 시간 주기를 설정합니다.</p>
+</li>
+<li>
+<p>검색 시간이 짧을 수록 실시간 검색 결과 신뢰성이 높아집니다.</p>
+</li>
+<li>
+<p>검색네트워크 범위 : 검색할 네트워크 범위를 Network 단위가 아닌 Range로 설정합니다.</p>
+</li>
+</ul>
+<p><img alt="" src="/assets/images/NewItem1846.png" /></p>
+<p>네트워크차단 예외</p>
+<ul>
+<li>네트워크 범위 : 네트워크 차단시에 연결 허용할 범위를 지정합니다.</li>
+</ul>
+<p>© Copyright SWeeper Inc.. All Rights Reserved</p>
+</article>
+</body></html>

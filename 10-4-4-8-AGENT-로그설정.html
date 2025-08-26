@@ -1,0 +1,79 @@
+<!doctype html><html lang="ko"><meta charset="utf-8">
+<title>10-4-4-8. AGENT 로그설정</title>
+<meta name="robots" content="noindex,follow">
+<meta name="original_url" content="https://www.sweeper.or.kr/etc/manual/10-4-4-8AGENT.html">
+<meta name="images" content='["arrow_up.png", "arrow_left.png", "arrow_right.png", "NewItem2359.png", "NewItem2361.png"]'>
+<link rel="stylesheet" href="/style.css">
+<body>
+<article>
+<h1>10-4-4-8. AGENT 로그설정</h1>
+<div class="src">원문: <a href="https://www.sweeper.or.kr/etc/manual/10-4-4-8AGENT.html" target="_blank" rel="noopener">https://www.sweeper.or.kr/etc/manual/10-4-4-8AGENT.html</a></div>
+<h1 id="10-4-4-8-agent">10-4-4-8. AGENT 로그설정</h1>
+<p>Source: https://www.sweeper.or.kr/etc/manual/10-4-4-8AGENT.html</p>
+<h1 id="10-4-4-8-agent_1">10-4-4-8. AGENT 로그설정</h1>
+<p><a href="10.html">10. 기타</a> ›› <a href="10-4.html">10-4. 명령전송</a> ›› <a href="10-4-4.html">10-4-4. 장비 설정 변경</a> ›› <a href="10-4-4-9AGENT.html">10-4-4-9. AGENT 로그수집</a> ››</p>
+<p><a href="10-4-4-9AGENT.html"><img alt="" src="/assets/images/arrow_up.png" /></a>
+<a href="10-4-4-9AGENT.html"><img alt="" src="/assets/images/arrow_left.png" /></a>
+<a href="10-5.html"><img alt="" src="/assets/images/arrow_right.png" /></a></p>
+<p>장비의 로그  설정을 할  수 있는 명령입니다. </p>
+<p>에이전트 모니터링이 필요할 때, 로그 레벨/유형/경로/파일사이즈/갯수 옵션을 설정하여 원하는대로 로그를 확인할 수 있습니다. </p>
+<p>설정방법</p>
+<p>최초 명령 메뉴 선택에 대한 부분은 상위 목차인 <a href="10-4.html">[명령전송]</a>을 확인하여 주시기 바랍니다. </p>
+<ol>
+<li>Agent 로그 설정을 선택합니다.</li>
+</ol>
+<p><img alt="" src="/assets/images/NewItem2359.png" /></p>
+<ol>
+<li>
+<p>로그 설정에 필요한 설정을 합니다.</p>
+</li>
+<li>
+<p>작동기능 : 작동기능 별 로그 설정을 할 수 있습니다.</p>
+</li>
+<li>로그레벨 :  로그 수준을 설정합니다.</li>
+<li>
+<p>로그유형 : 파일 사이즈별 / 일자별 중 선택합니다.</p>
+</li>
+<li>
+<p>파일 사이즈별 : '로그파일 사이즈'에 입력한 용량 이상이 되면 이전 내용은 저장하고 새 파일에 기록합니다.</p>
+</li>
+<li>
+<p>일자별 : 하루 단위로 로그를 기록합니다. 파일 크기는 제한하지 않고 날짜가 변경되면 이전 내용은 저장하고 새 파일에 기록합니다.</p>
+</li>
+<li>
+<p>로그파일 사이즈 : 로그파일 크기가 무제한 커지는 것을 방지하기 위해 최대 크기를 지정합니다.</p>
+</li>
+<li>로그파일 백업갯수 : 로그 파일 기록 파일 개수를 설정합니다.</li>
+<li>로그파일 경로 : 로그 파일을 저장할 폴더를 설정합니다.</li>
+<li>
+<p>로그 초기화 일자 : 설정한 로그 세팅은 설정한 날짜부터 ~ 초기화일자 전날까지 적용되며 '로그 초기화 날짜' 이후에는 로그 기본설정으로 되돌아갑니다.</p>
+</li>
+<li>
+<p>설정이 완료되면 다음버튼을 클릭합니다.</p>
+</li>
+<li>
+<p>이후 설정내용은 <a href="10-4.html">[명령전송]</a>을 확인하여 주시기 바랍니다.</p>
+</li>
+</ol>
+<p>참고사항</p>
+<p>예시</p>
+<ul>
+<li>작동기능 : 전체</li>
+<li>로그 레벨 : INFO</li>
+<li>로그 유형 : 파일 사이즈별</li>
+<li>로그파일 사이즈 : 2,000,000 Byte</li>
+<li>로그파일 백업 갯수 : 5</li>
+<li>로그파일 경로 : D:\Test</li>
+<li>로그 초기화 일자 : 2021-12-13</li>
+</ul>
+<p>예시설명</p>
+<ul>
+<li>전체 작동기능 로그가 D:\Test경로에 기록하며 각 기능로 로그 파일 크기가 2MB가 넘으면 새 파일에 기록합니다. 이전 로그는 총 5개의 파일까지 기록합니다.</li>
+<li>이 설정은 2021-12-13일이 되면 모두 초기화 됩니다. 기본 로그 설정으로 재설정됩니다.</li>
+<li>참고이미지</li>
+</ul>
+<p><img alt="" src="/assets/images/NewItem2361.png" /></p>
+<p>Mac Agent 는 해당 명령을 지원하지 않습니다.</p>
+<p>© Copyright SWeeper Inc.. All Rights Reserved</p>
+</article>
+</body></html>
